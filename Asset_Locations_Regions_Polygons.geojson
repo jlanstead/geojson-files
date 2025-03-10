@@ -28643,7 +28643,7 @@
       "type": "Feature",
       "properties": {
         "AssetID": 10000323,
-        "LocationID": "29.97000, -95.55574",
+        "LocationID": "29.97000,-95.55574",
         "UniqueID": "POLY261",
         "LegendID": "TechnicianAlpitronic",
         "Display": true,
@@ -28865,7 +28865,7 @@
       "type": "Feature",
       "properties": {
         "AssetID": 10000332,
-        "LocationID": "34.05223, -118.24368",
+        "LocationID": "34.05223,-118.24368",
         "UniqueID": "POLY263",
         "LegendID": "TechnicianAlpitronic",
         "Display": true,
@@ -29087,7 +29087,7 @@
       "type": "Feature",
       "properties": {
         "AssetID": 10000335,
-        "LocationID": "37.77493, -122.41942",
+        "LocationID": "37.77493,-122.41942",
         "UniqueID": "POLY265",
         "LegendID": "TechnicianAlpitronic",
         "Display": true,
@@ -29309,7 +29309,7 @@
       "type": "Feature",
       "properties": {
         "AssetID": 10000343,
-        "LocationID": "42.35279, -88.12794",
+        "LocationID": "42.35279,-88.12794",
         "UniqueID": "POLY267",
         "LegendID": "TechnicianAlpitronic",
         "Display": true,
