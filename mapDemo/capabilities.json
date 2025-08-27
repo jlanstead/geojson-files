@@ -1,79 +1,29 @@
 {
-    "dataRoles": [
-        {
-            "displayName": "Category Data",
-            "name": "category",
-            "kind": "Grouping"
-        },
-        {
-            "displayName": "Measure Data",
-            "name": "measure",
-            "kind": "Measure"
-        }
-    ],
-    "objects": {
-        "dataPoint": {
-            "properties": {
-                "defaultColor": {
-                    "type": {
-                        "fill": {
-                            "solid": {
-                                "color": true
-                            }
-                        }
-                    }
-                },
-                "showAllDataPoints": {
-                    "type": {
-                        "bool": true
-                    }
-                },
-                "fill": {
-                    "type": {
-                        "fill": {
-                            "solid": {
-                                "color": true
-                            }
-                        }
-                    }
-                },
-                "fillRule": {
-                    "type": {
-                        "fill": {}
-                    }
-                },
-                 "fontSize": {
-                    "type": {
-                        "formatting": {
-                            "fontSize": true
-                        }
-                    }
-                }
-            }
-        }
+  "objects": {
+    "points": {
+      "displayName": "Points",
+      "properties": {
+        "enable":   { "type": { "bool": true } },
+        "sizePx":   { "type": { "numeric": true } },
+        "strokePx": { "type": { "numeric": true } },
+        "jitterEps":{ "type": { "numeric": true } }
+      }
     },
-    "dataViewMappings": [
-        {
-            "categorical": {
-                "categories": {
-                    "for": {
-                        "in": "category"
-                    },
-                    "dataReductionAlgorithm": {
-                        "top": {}
-                    }
-                },
-                "values": {
-                    "select": [
-                        {
-                            "bind": {
-                                "to": "measure"
-                            }
-                        }
-                    ]
-                }
-            }
-        }
-    ],
-    "privileges": []
+    "polygons": {
+      "displayName": "Polygons",
+      "properties": {
+        "enable":   { "type": { "bool": true } },
+        "strokePx": { "type": { "numeric": true } },
+        "opacity":  { "type": { "numeric": true } }
+      }
+    },
+    "layers": {
+      "displayName": "Layers",
+      "properties": {
+        "orderCsv":  { "type": { "text": true } },
+        "hiddenCsv": { "type": { "text": true } },
+        "colorJson": { "type": { "text": true } }
+      }
+    }
+  }
 }
