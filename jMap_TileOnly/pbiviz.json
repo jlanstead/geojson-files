@@ -5,13 +5,20 @@
     "guid": "JMapTileOnly123456",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "MapLibre basemap only (pan/zoom)"
+    "description": "MapLibre basemap only (pan/zoom)",
+    "supportUrl": "https://powerbi.microsoft.com"
   },
   "apiVersion": "5.1.0",
-  "author": { "name": "You" },
-  "assets": { "icon": "assets/icon.png" },
+  "author": {
+    "name": "You",
+    "email": "you@example.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
   "style": "style/visual.less",
   "capabilities": "capabilities.json",
   "dependencies": "dependencies.json",
-  "stringResources": []
+  "stringResources": [],
+  "supportUrl": "https://powerbi.microsoft.com"
 }

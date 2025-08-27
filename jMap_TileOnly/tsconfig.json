@@ -3,13 +3,17 @@
     "target": "ES2017",
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["ES2017", "DOM"],
+    "lib": [
+      "ES2017",
+      "DOM"
+    ],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "outDir": "./.tmp/build/",
-    "declaration": true
+    "declaration": true,
+    "strictNullChecks": false
   },
   "files": [
     "./src/visual.ts"

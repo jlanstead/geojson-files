@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.0",
+		"author": {"name":"You","email":"you@example.com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/JMapTileOnly123456.pbiviz.json"
+			}
+		],
+		"visual": {"name":"JMap_TileOnly","displayName":"JMap Tile Only","guid":"JMapTileOnly123456","visualClassName":"Visual","version":"1.0.0.0","description":"MapLibre basemap only (pan/zoom)","supportUrl":"https://powerbi.microsoft.com","gitHubUrl":""},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}
