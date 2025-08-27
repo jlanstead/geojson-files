@@ -1,0 +1,54 @@
+{
+  "dataRoles": [
+    { "name": "LegendType",          "displayName": "Legend",        "kind": "Grouping" },
+    { "name": "Lat",                 "displayName": "Latitude",      "kind": "Measure"  },
+    { "name": "Lon",                 "displayName": "Longitude",     "kind": "Measure"  },
+    { "name": "LocationId",          "displayName": "Location ID",   "kind": "Grouping" },
+    { "name": "PolyId",              "displayName": "Polygon ID",    "kind": "Grouping" },
+    { "name": "PolygonCoordinates",  "displayName": "Polygon WKT",   "kind": "Measure"  }
+  ],
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "select": [
+            { "for": { "in": "LegendType" } },
+            { "for": { "in": "Lat" } },
+            { "for": { "in": "Lon" } },
+            { "for": { "in": "LocationId" } },
+            { "for": { "in": "PolyId" } },
+            { "for": { "in": "PolygonCoordinates" } }
+          ]
+        }
+      }
+    }
+  ],
+  "objects": {
+    "points": {
+      "displayName": "Points",
+      "properties": {
+        "enable":    { "displayName": "Enable",      "type": { "bool": true } },
+        "sizePx":    { "displayName": "Size (px)",   "type": { "numeric": true } },
+        "strokePx":  { "displayName": "Stroke (px)", "type": { "numeric": true } },
+        "jitterEps": { "displayName": "Jitter",      "type": { "numeric": true } }
+      }
+    },
+    "polygons": {
+      "displayName": "Polygons",
+      "properties": {
+        "enable":    { "displayName": "Enable",      "type": { "bool": true } },
+        "strokePx":  { "displayName": "Stroke (px)", "type": { "numeric": true } },
+        "opacity":   { "displayName": "Opacity",     "type": { "numeric": true } }
+      }
+    },
+    "layers": {
+      "displayName": "Layers",
+      "properties": {
+        "orderCsv":  { "displayName": "Order (CSV)",  "type": { "text": true } },
+        "hiddenCsv": { "displayName": "Hidden (CSV)", "type": { "text": true } },
+        "colorJson": { "displayName": "Colors (JSON)","type": { "text": true } }
+      }
+    }
+  },
+  "privileges": []
+}

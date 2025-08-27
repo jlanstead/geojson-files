@@ -1,0 +1,18 @@
+{
+  "visual": {
+    "name": "JMapv6",
+    "displayName": "JMap v6",
+    "guid": "JMapV6_f8l7369o",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Custom map visual: points + polygons + per-layer controls",
+    "supportUrl": "https://powerbi.microsoft.com"
+  },
+  "apiVersion": "5.1.0",
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "supportUrl": "https://powerbi.microsoft.com"
+}

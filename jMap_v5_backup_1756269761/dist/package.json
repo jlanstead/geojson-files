@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.0",
+		"author": {"name":"","email":""},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/JMap1234567890.pbiviz.json"
+			}
+		],
+		"visual": {"name":"JMap","displayName":"JMap","guid":"JMap1234567890","visualClassName":"Visual","version":"1.0.0.0","description":"Custom map visual: points + polygons + per-layer controls","supportUrl":"https://powerbi.microsoft.com","gitHubUrl":""},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

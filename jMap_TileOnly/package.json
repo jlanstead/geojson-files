@@ -1,0 +1,18 @@
+{
+  "name": "jmap-tileonly",
+  "version": "1.0.0",
+  "description": "Tile-only MapLibre visual (no data roles)",
+  "license": "MIT",
+  "scripts": {
+    "pbiviz": "pbiviz",
+    "start": "pbiviz start",
+    "package": "pbiviz package"
+  },
+  "dependencies": {
+    "maplibre-gl": "^3.6.2",
+    "powerbi-visuals-api": "5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "visual": {
+    "name": "JMap_TileOnly",
+    "displayName": "JMap Tile Only",
+    "guid": "JMapTileOnly123456",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "MapLibre basemap only (pan/zoom)"
+  },
+  "apiVersion": "5.1.0",
+  "author": { "name": "You" },
+  "assets": { "icon": "assets/icon.png" },
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}
