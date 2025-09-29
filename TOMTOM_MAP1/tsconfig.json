@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "lib": ["DOM", "ES2017"],
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "types": []
+  },
+  "files": [
+    "src/visual.ts",
+    "src/types/maplibre-csp.d.ts"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    ".tmp/precompile/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,69 @@
+{
+  "privileges": [
+    { "name": "WebAccess", "essential": true, "parameters": ["https://*.api.tomtom.com/*"] }
+  ],
+
+  "dataRoles": [
+    { "displayName": "Latitude",  "name": "latitude",  "kind": "Grouping", "description": "Point latitude" },
+    { "displayName": "Longitude", "name": "longitude", "kind": "Grouping", "description": "Point longitude" },
+    { "displayName": "Legend (optional)", "name": "legend", "kind": "Grouping", "description": "Category label" },
+    { "displayName": "Size (optional)",   "name": "size",   "kind": "Measure",  "description": "Bubble size" },
+    { "displayName": "Polygon JSON (optional)", "name": "polyjson", "kind": "Grouping", "description": "GeoJSON or TopoJSON string per row (optional)" }
+  ],
+
+  "dataViewMappings": [
+    {
+      "categorical": {
+        "categories": {
+          "select": [
+            { "for": { "in": "latitude" } },
+            { "for": { "in": "longitude" } },
+            { "for": { "in": "legend" }, "optional": true },
+            { "for": { "in": "polyjson" }, "optional": true }
+          ]
+        },
+        "values": {
+          "select": [
+            { "for": { "in": "size" }, "optional": true }
+          ]
+        }
+      }
+    }
+  ],
+
+  "objects": {
+    "map": {
+      "displayName": "Map",
+      "properties": {
+        "styleUrl": {
+          "displayName": "TomTom Map Maker style URL",
+          "description": "e.g. https://api.tomtom.com/style/2/custom/style/<YOUR-STYLE-ID>=.json?key=KEY",
+          "type": { "text": true }
+        },
+        "centerLat": { "displayName": "Center lat", "type": { "numeric": true } },
+        "centerLon": { "displayName": "Center lon", "type": { "numeric": true } },
+        "zoom":      { "displayName": "Zoom",       "type": { "numeric": true } }
+      }
+    },
+    "bubble": {
+      "displayName": "Bubbles",
+      "properties": {
+        "scaleBySize": { "displayName": "Scale by Size field", "type": { "bool": true } },
+        "radiusFixed": { "displayName": "Radius (px)",         "type": { "numeric": true } },
+        "radiusMin":   { "displayName": "Min radius (px)",     "type": { "numeric": true } },
+        "radiusMax":   { "displayName": "Max radius (px)",     "type": { "numeric": true } },
+        "opacity":     { "displayName": "Opacity (0–1)",       "type": { "numeric": true } }
+      }
+    },
+    "polygons": {
+      "displayName": "Polygons",
+      "properties": {
+        "fillOpacity": { "displayName": "Fill opacity", "type": { "numeric": true } },
+        "strokeWidth": { "displayName": "Stroke width", "type": { "numeric": true } }
+      }
+    }
+  },
+
+  "supportsEmptyDataView": true,
+  "supportsLandingPage": true
+}

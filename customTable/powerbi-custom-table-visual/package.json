@@ -1,0 +1,13 @@
+{
+  "name": "custom-table-visual",
+  "version": "1.0.0",
+  "description": "Minimal Power BI custom visual scaffold",
+  "scripts": {
+    "package": "pbiviz package"
+  },
+  "dependencies": {
+    "powerbi-visuals-api": "5.11.0",
+    "core-js": "^3.32.2",
+    "regenerator-runtime": "^0.13.11"
+  }
+}

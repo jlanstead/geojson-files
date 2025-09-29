@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.35",
+		"author": {"name":"","email":""},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/PY28efbd3c9aff.pbiviz.json"
+			}
+		],
+		"visual": {"name":"PY28","displayName":"PY28 v1.0.0.35","guid":"PY28efbd3c9aff","visualClassName":"Visual","version":"1.0.0.35","description":"Minimal MapLibre GL map (no data roles).","supportUrl":"https://maplibre.org/","gitHubUrl":"https://maplibre.org/"},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

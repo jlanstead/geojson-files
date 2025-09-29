@@ -1,0 +1,27 @@
+{
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": true,
+      "parameters": ["https://*.api.tomtom.com"]
+    }
+  ],
+  "dataRoles": [
+    { "name": "latitude",  "kind": "GroupingOrMeasure", "displayName": "Latitude" },
+    { "name": "longitude", "kind": "GroupingOrMeasure", "displayName": "Longitude" },
+    { "name": "legend",    "kind": "Grouping",          "displayName": "Legend (optional)" }
+  ],
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "select": [
+            { "for": { "in": "latitude" } },
+            { "for": { "in": "longitude" } },
+            { "for": { "in": "legend" }, "optional": true }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "visual": {
+    "name": "PY6",
+    "displayName": "PY6 v1.0.0.6",
+    "guid": "PY615eb316d21",
+    "visualClassName": "Visual",
+    "version": "1.0.0.6",
+    "description": "Simple MapLibre + TomTom raster tiles + Lat/Lon points",
+    "supportUrl": "https://example.com/support",
+    "gitHubUrl": "https://github.com/example/repo"
+  },
+  "apiVersion": "5.11.0",
+  "author": {
+    "name": "Josh",
+    "email": "josh@example.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [],
+  "externalCSS": [],
+  "capabilities": "capabilities.json",
+  "stringResources": [],
+  "privacyTerms": {
+    "resources": [
+      {
+        "resourceId": "TomTomTiles",
+        "path": "https://*.api.tomtom.com"
+      }
+    ]
+  }
+}

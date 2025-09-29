@@ -1,0 +1,45 @@
+.table-visual {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-visual th {
+    background-color: #f3f3f3;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.table-visual th.rotate {
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+}
+
+.table-visual td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.table-visual th.align-left {
+    text-align: left;
+}
+
+.table-visual th.align-center {
+    text-align: center;
+}
+
+.table-visual th.align-right {
+    text-align: right;
+}
+
+.table-visual tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-visual tr:hover {
+    background-color: #f1f1f1;
+}

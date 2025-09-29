@@ -1,0 +1,12 @@
+{
+  "supportsEmptyDataView": true,
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": true,
+      "parameters": [
+        "https://demotiles.maplibre.org/*"
+      ]
+    }
+  ]
+}

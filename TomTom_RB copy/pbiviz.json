@@ -1,0 +1,28 @@
+{
+  "visual": {
+    "name": "PY42",
+    "displayName": "PY42 v1.0.0.49",
+    "guid": "PY42a9ae28ade4",
+    "visualClassName": "Visual",
+    "version": "1.0.0.49",
+    "description": "Minimal MapLibre GL map (no data roles).",
+    "supportUrl": "https://maplibre.org/",
+    "gitHubUrl": "https://maplibre.org/"
+  },
+  "apiVersion": "5.11.0",
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "style/visual.less"
+    }
+  ],
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}

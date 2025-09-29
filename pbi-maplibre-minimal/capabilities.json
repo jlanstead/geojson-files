@@ -1,0 +1,70 @@
+{
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": true,
+      "parameters": [
+        "https://demotiles.maplibre.org/*",
+        "https://tiles.basemaps.cartocdn.com/*",
+        "https://api.maptiler.com/*"
+      ]
+    }
+  ],
+  "dataRoles": [
+    {
+      "displayName": "Latitude",
+      "name": "latitude",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Longitude",
+      "name": "longitude",
+      "kind": "Grouping"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "categorical": {
+        "categories": {
+          "select": [
+            {
+              "for": {
+                "in": "latitude"
+              }
+            },
+            {
+              "for": {
+                "in": "longitude"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "objects": {
+    "map": {
+      "displayName": "Map",
+      "properties": {
+        "styleUrl": { "displayName": "Style URL", "type": { "text": true } },
+        "theme": {
+          "displayName": "Theme",
+          "type": {
+            "enumeration": [
+              { "displayName": "Default", "value": "default" },
+              { "displayName": "Dark (basemap)", "value": "dark" },
+              { "displayName": "Gray (basemap)", "value": "gray" },
+              { "displayName": "BW (land black / water gray)", "value": "bw" },
+              { "displayName": "Custom (style URL)", "value": "custom" }
+            ]
+          }
+        },
+        "showBorders": { "displayName": "Show borders", "type": { "bool": true } },
+        "borderColor": { "displayName": "Border color", "type": { "fill": { "solid": { "color": true } } } },
+        "landColor": { "displayName": "Land color", "type": { "fill": { "solid": { "color": true } } } },
+        "waterColor": { "displayName": "Water color", "type": { "fill": { "solid": { "color": true } } } }
+      }
+    }
+  },
+  "supportsEmptyDataView": true
+}

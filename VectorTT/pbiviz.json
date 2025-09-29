@@ -1,0 +1,25 @@
+{
+  "visual": {
+    "name": "PY1",
+    "displayName": "PY1 v1.0.0.1",
+    "guid": "PY1c3363238dc",
+    "visualClassName": "Visual",
+    "version": "1.0.0.1",
+    "apiVersion": "5.11.0"
+  },
+  "resources": {
+    "externals": [
+      {
+        "path": "node_modules/maplibre-gl/dist/maplibre-gl.js"
+      },
+      {
+        "path": "node_modules/topojson-client/dist/topojson-client.min.js"
+      }
+    ]
+  },
+  "authorization": {
+    "permissions": [
+      "WebAccess"
+    ]
+  }
+}

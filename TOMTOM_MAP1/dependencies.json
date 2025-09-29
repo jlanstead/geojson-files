@@ -1,0 +1,15 @@
+{
+  "externalJS": [],
+  "resources": [
+    {
+      "resourceId": "maplibre-js",
+      "source": "node_modules/maplibre-gl/dist/maplibre-gl.js",
+      "type": "js"
+    },
+    {
+      "resourceId": "maplibre-css",
+      "source": "node_modules/maplibre-gl/dist/maplibre-gl.css",
+      "type": "css"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "dataRoles": [
+    { "name": "lat", "kind": "GroupingOrMeasure", "displayName": "Latitude" },
+    { "name": "lon", "kind": "GroupingOrMeasure", "displayName": "Longitude" },
+    { "name": "cat", "kind": "Grouping", "displayName": "Category" },
+    { "name": "tooltips", "kind": "Grouping", "displayName": "Tooltips" }
+  ],
+  "dataViewMappings": [{
+    "table": { "rows": { "select": [
+      { "for": { "in": "lat" } },
+      { "for": { "in": "lon" } },
+      { "for": { "in": "cat" } },
+      { "for": { "in": "tooltips" } }
+    ] } }
+  }],
+  "objects": {}
+}

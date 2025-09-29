@@ -1,0 +1,28 @@
+{
+  "visual": {
+    "name": "PY28",
+    "displayName": "PY28 v1.0.0.35",
+    "guid": "PY281f1e1ff6ba",
+    "visualClassName": "Visual",
+    "version": "1.0.0.35",
+    "description": "Minimal MapLibre GL map (no data roles).",
+    "supportUrl": "https://maplibre.org/",
+    "gitHubUrl": "https://maplibre.org/"
+  },
+  "apiVersion": "5.11.0",
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "style/visual.less"
+    }
+  ],
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}

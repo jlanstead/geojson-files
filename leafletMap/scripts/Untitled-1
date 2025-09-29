@@ -1,0 +1,21 @@
+cd /workspaces/geojson-files/leafletMap
+
+# absolute path for replacement
+ABS=$(pwd)
+
+# show targets
+grep -RIn --exclude-dir=.bin '"tsconfigRootDir"' node_modules | sed -n '1,200p'
+
+# patch each file found (backups created with .bak)
+for f in $(grep -RIl --exclude-dir=.bin '"tsconfigRootDir"' node_modules); do
+  echo "Patching $f"
+  cp "$f" "$f.bak"
+  perl -0777 -pe "s/tsconfigRootDir\\s*:\\s*\\\"\\.\\\"/tsconfigRootDir: \\\"$ABS\\\"/g" -i "$f"
+done
+
+# verify merged config no longer contains "."
+npx eslint --print-config src/visual.ts | sed -n '1,120p' | grep -n "tsconfigRootDir" -n || true
+
+# run packaging
+rm -rf .tmp dist
+pbiviz package --verbose

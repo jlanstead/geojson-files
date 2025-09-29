@@ -1,0 +1,17 @@
+/* MapLibre CSS is imported in TS; don't @import it here */
+.visualHost {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.visualHost, .visualHost * { box-sizing: border-box; }
+.visualHost .map { position: absolute; inset: 0; }
+.legendBadge {
+  position: absolute; left: 8px; top: 8px;
+  background: #fff; padding: 4px 8px; border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2); z-index: 10;
+  font: 12px/1.3 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}

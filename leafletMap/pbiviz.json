@@ -1,0 +1,25 @@
+{
+  "visual": {
+    "name": "LeafletMap",
+    "displayName": "Leaflet Map (POC)",
+    "guid": "leafletmap123456",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "apiVersion": "5.11.0",
+    "disableLinting": true
+  },
+  "apiVersion": "5.11.0",
+  "author": {
+    "name": "Your Name"
+  },
+  "resources": [
+    { "path": "style/visual.less" },
+    { "path": "src/visual.ts" }
+  ],
+  "assets": {
+    "icon": "assets/icon.png",
+    "screenshots": []
+  },
+  "externalJS": [],
+  "stringResources": []
+}
